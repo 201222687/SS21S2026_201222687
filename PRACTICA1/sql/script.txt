@@ -1,0 +1,184 @@
+/* =====================================================
+   1. ELIMINAR BASE DE DATOS SI EXISTE
+===================================================== */
+IF DB_ID('DW_Vuelos') IS NOT NULL
+BEGIN
+    ALTER DATABASE DW_Vuelos SET SINGLE_USER WITH ROLLBACK IMMEDIATE;
+    DROP DATABASE DW_Vuelos;
+END
+GO
+
+/* =====================================================
+   2. CREAR BASE DE DATOS
+===================================================== */
+CREATE DATABASE DW_Vuelos;
+GO
+
+USE DW_Vuelos;
+GO
+
+/* =====================================================
+   3. DIMENSIONES
+===================================================== */
+
+-- ==========================================
+-- DIM_FECHA
+-- ==========================================
+CREATE TABLE Dim_Fecha (
+    id_fecha INT PRIMARY KEY,     -- Formato YYYYMMDD
+    fecha DATE NOT NULL,
+    anio INT NOT NULL,
+    mes INT NOT NULL,
+    nombre_mes VARCHAR(20),
+    trimestre INT,
+    dia INT,
+    nombre_dia VARCHAR(20),
+    es_fin_semana BIT
+);
+GO
+
+
+-- ==========================================
+-- DIM_AEROLINEA
+-- ==========================================
+CREATE TABLE Dim_Aerolinea (
+    id_aerolinea INT IDENTITY(1,1) PRIMARY KEY,
+    airline_code VARCHAR(10) NOT NULL,
+    airline_name VARCHAR(100) NOT NULL
+);
+GO
+
+
+-- ==========================================
+-- DIM_AEROPUERTO
+-- ==========================================
+CREATE TABLE Dim_Aeropuerto (
+    id_aeropuerto INT IDENTITY(1,1) PRIMARY KEY,
+    codigo_aeropuerto VARCHAR(10) NOT NULL
+);
+GO
+
+
+-- ==========================================
+-- DIM_PASAJERO
+-- ==========================================
+CREATE TABLE Dim_Pasajero (
+    id_pasajero INT IDENTITY(1,1) PRIMARY KEY,
+    passenger_id VARCHAR(50) NOT NULL,
+    passenger_gender VARCHAR(20),
+    passenger_age INT,
+    rango_edad VARCHAR(30),
+    passenger_nationality VARCHAR(100)
+);
+GO
+
+
+-- ==========================================
+-- DIM_PAGO
+-- ==========================================
+CREATE TABLE Dim_Pago (
+    id_pago INT IDENTITY(1,1) PRIMARY KEY,
+    payment_method VARCHAR(50) NOT NULL
+);
+GO
+
+
+-- ==========================================
+-- DIM_CANAL_VENTA
+-- ==========================================
+CREATE TABLE Dim_Canal_Venta (
+    id_canal INT IDENTITY(1,1) PRIMARY KEY,
+    sales_channel VARCHAR(50) NOT NULL
+);
+GO
+
+
+-- ==========================================
+-- DIM_ESTADO_VUELO
+-- ==========================================
+CREATE TABLE Dim_Estado_Vuelo (
+    id_estado INT IDENTITY(1,1) PRIMARY KEY,
+    status VARCHAR(30) NOT NULL
+);
+GO
+
+
+/* =====================================================
+   4. TABLA DE HECHOS
+===================================================== */
+
+CREATE TABLE Fact_Vuelos (
+    id_fact_vuelo INT IDENTITY(1,1) PRIMARY KEY,
+
+    id_fecha_salida INT NOT NULL,
+    id_fecha_reserva INT NOT NULL,
+    id_aerolinea INT NOT NULL,
+    id_origen INT NOT NULL,
+    id_destino INT NOT NULL,
+    id_pasajero INT NOT NULL,
+    id_pago INT NOT NULL,
+    id_canal INT NOT NULL,
+    id_estado INT NOT NULL,
+
+    ticket_price_usd_est DECIMAL(12,2),
+    duration_min INT,
+    delay_min INT,
+    bags_total INT,
+    bags_checked INT,
+
+    -- Relaciones
+    CONSTRAINT FK_Fecha_Salida FOREIGN KEY (id_fecha_salida)
+        REFERENCES Dim_Fecha(id_fecha),
+
+    CONSTRAINT FK_Fecha_Reserva FOREIGN KEY (id_fecha_reserva)
+        REFERENCES Dim_Fecha(id_fecha),
+
+    CONSTRAINT FK_Aerolinea FOREIGN KEY (id_aerolinea)
+        REFERENCES Dim_Aerolinea(id_aerolinea),
+
+    CONSTRAINT FK_Origen FOREIGN KEY (id_origen)
+        REFERENCES Dim_Aeropuerto(id_aeropuerto),
+
+    CONSTRAINT FK_Destino FOREIGN KEY (id_destino)
+        REFERENCES Dim_Aeropuerto(id_aeropuerto),
+
+    CONSTRAINT FK_Pasajero FOREIGN KEY (id_pasajero)
+        REFERENCES Dim_Pasajero(id_pasajero),
+
+    CONSTRAINT FK_Pago FOREIGN KEY (id_pago)
+        REFERENCES Dim_Pago(id_pago),
+
+    CONSTRAINT FK_Canal FOREIGN KEY (id_canal)
+        REFERENCES Dim_Canal_Venta(id_canal),
+
+    CONSTRAINT FK_Estado FOREIGN KEY (id_estado)
+        REFERENCES Dim_Estado_Vuelo(id_estado)
+);
+GO
+
+
+/* =====================================================
+   5. ÍNDICES PARA OPTIMIZACIÓN
+===================================================== */
+
+CREATE INDEX IX_Fact_FechaSalida ON Fact_Vuelos(id_fecha_salida);
+CREATE INDEX IX_Fact_FechaReserva ON Fact_Vuelos(id_fecha_reserva);
+CREATE INDEX IX_Fact_Aerolinea ON Fact_Vuelos(id_aerolinea);
+CREATE INDEX IX_Fact_Origen ON Fact_Vuelos(id_origen);
+CREATE INDEX IX_Fact_Destino ON Fact_Vuelos(id_destino);
+CREATE INDEX IX_Fact_Pasajero ON Fact_Vuelos(id_pasajero);
+CREATE INDEX IX_Fact_Pago ON Fact_Vuelos(id_pago);
+CREATE INDEX IX_Fact_Canal ON Fact_Vuelos(id_canal);
+CREATE INDEX IX_Fact_Estado ON Fact_Vuelos(id_estado);
+GO
+
+
+/* =====================================================
+   6. INSERCIÓN INICIAL DE ESTADOS (Opcional recomendado)
+===================================================== */
+
+INSERT INTO Dim_Estado_Vuelo (status)
+VALUES ('ON_TIME'),
+       ('DELAYED'),
+       ('CANCELLED');
+GO
