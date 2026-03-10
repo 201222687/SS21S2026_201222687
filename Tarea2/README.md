@@ -1,84 +1,127 @@
-# Tarea 2 – Construcción de dashboard analitico en Power Bi
+# **Tarea 2 – Construcción de dashboard analitico en Power Bi**
 
-## Dataset Utilizado
+## **Dataset Utilizado**
 
-Nombre: AI Job Market Dataset.csv
-Total de registros: 10,345  
-Total de columnas: 19  
-Licencia: CC BY-NC-SA 4.0  
+* Nombre: AI Job Market Dataset
+* Total de registros: 10,345  
+* Total de columnas: 19  
+* Licencia: CC BY-NC-SA 4.0  
 
-## Descripción
+# Análisis del Mercado Laboral de Inteligencia Artificial con Power BI
 
-El conjunto de datos del mercado laboral de inteligencia artificial y ciencia de datos (2020-2026) es un conjunto de datos generado sintéticamente y diseñado para simular patrones de contratación del mundo real en el mercado laboral de inteligencia artificial y ciencia de datos.
+## 1. Introducción
 
-El conjunto de datos contiene información estructurada sobre puestos de trabajo, características de las empresas, competencias técnicas requeridas, niveles de formación, experiencia requerida y rangos salariales. Refleja datos de contratación de diversos países, sectores y tamaños de empresas.
+En este proyecto se realizó un análisis exploratorio de un dataset relacionado con el mercado laboral en el área de Inteligencia Artificial. El objetivo principal fue utilizar Power BI para visualizar información relevante sobre salarios, tipos de trabajo y requisitos de experiencia en diferentes puestos del sector tecnológico.
 
-Este conjunto de datos está diseñado para respaldar el análisis de datos, el desarrollo de modelos de aprendizaje automático y proyectos de inteligencia empresarial.
+Para lograrlo, se construyó un dashboard interactivo que permite identificar patrones y tendencias dentro del mercado laboral de IA.
 
-El conjunto de datos se puede utilizar para:
+---
 
-Modelos de predicción salarial
-Análisis de la demanda de empleo
-Tareas de clasificación de aprendizaje automático
-Análisis de la fuerza laboral
-Análisis de tendencias de la demanda de habilidades
-Proyectos de cartera de ciencia de datos
-Todos los datos de este conjunto de datos se generan sintéticamente utilizando distribuciones estadísticas y aleatoriedad controlada, lo que garantiza la privacidad y mantiene patrones realistas.
+## 2. Descripción del Dataset
 
-## Proceso de Limpieza
+El dataset utilizado contiene información sobre ofertas laborales relacionadas con Inteligencia Artificial. Incluye variables como:
 
-### Eliminación de Duplicados
+* Puesto de trabajo
+* Industria de la empresa
+* País
+* Nivel de experiencia requerido
+* Habilidades técnicas
+* Tipo de trabajo (remoto, híbrido o presencial)
+* Salario ofrecido
+* Número de vacantes disponibles
 
-Se verificó la existencia de registros duplicados utilizando `duplicated()`.  
-No se encontraron duplicados.
+En total, el dataset cuenta con miles de registros que permiten analizar el comportamiento del mercado laboral en el sector de IA.
 
-### Tratamiento de Valores Nulos
+---
 
-Se comprobó la presencia de valores faltantes.  
-El dataset no contenía valores nulos.  
-Se aplicó imputación por media como procedimiento formal.
+## 3. Transformaciones Realizadas
 
-### Estandarización
+Antes de construir el dashboard se realizaron algunas transformaciones utilizando Power Query dentro de Power BI:
 
-Se normalizó la variable `gender` a mayúsculas y se verificaron tipos de datos.
+* Verificación y corrección de tipos de datos en las columnas.
+* Conversión de columnas numéricas como salario, experiencia y vacantes a formato entero.
+* Limpieza de posibles valores vacíos.
+* Preparación del dataset para su análisis y visualización.
 
-## Exploración
+Estas transformaciones permitieron asegurar que los datos fueran consistentes y adecuados para su análisis.
 
-Se realizaron:
+---
 
-• Tabla pivote de productividad por género  
-• Tabla pivote de productividad según horas de estudio  
-• Análisis de correlación  
-• Gráfico de dispersión  
+## 4. Visualizaciones del Dashboard
 
-## Interpretación
+El dashboard fue construido utilizando cuatro visualizaciones principales que permiten analizar distintos aspectos del mercado laboral de IA.
 
-Se observa una relación positiva entre:
+### 4.1 Salario Promedio del Mercado (Tarjeta KPI)
 
-- study_hours_per_day y productivity_score
-- focus_score y productivity_score
-- final_grade y productivity_score
+La tarjeta KPI muestra el salario promedio ofrecido en las posiciones relacionadas con Inteligencia Artificial.
 
-El dataset se encuentra limpio y listo para modelado predictivo.
-
-![alt text](image.png)
-
-![alt text](image-1.png)
+Este indicador permite tener una visión general del nivel salarial dentro del sector tecnológico y sirve como referencia para comprender el valor económico de los perfiles especializados en IA.
 
 ![alt text](image-2.png)
 
+---
+
+### 4.2 Salario Promedio por Puesto de Trabajo (Gráfico de Barras)
+
+Esta visualización muestra el salario promedio asociado a cada tipo de puesto en el área de Inteligencia Artificial.
+
+El análisis permite identificar qué roles tienen mayores niveles salariales, lo cual refleja la demanda y la especialización requerida en ciertas posiciones como científicos de datos, ingenieros de machine learning o especialistas en inteligencia artificial.
+
 ![alt text](image-3.png)
+
+---
+
+### 4.3 Distribución del Tipo de Trabajo (Gráfico Circular)
+
+El gráfico circular muestra la distribución de los empleos según su modalidad de trabajo:
+
+* Trabajo remoto
+* Trabajo híbrido
+* Trabajo presencial
+
+Este análisis permite observar cómo el sector tecnológico ha adoptado modelos de trabajo flexibles, siendo el trabajo remoto una tendencia importante dentro de la industria.
 
 ![alt text](image-4.png)
 
+---
+
+### 4.4 Relación entre Experiencia y Salario (Gráfico de Líneas)
+
+Esta visualización muestra la relación entre los años de experiencia requeridos y el salario promedio ofrecido.
+
+El análisis evidencia una tendencia clara: a medida que aumentan los años de experiencia, también incrementa el nivel salarial. Esto refleja cómo el mercado laboral valora la experiencia profesional dentro del área de Inteligencia Artificial.
+
 ![alt text](image-5.png)
+
+---
+
+## 5. Conclusiones
+
+El análisis realizado permite obtener varias conclusiones importantes sobre el mercado laboral de Inteligencia Artificial:
+
+* Los salarios en el sector de IA son significativamente competitivos en comparación con otras áreas tecnológicas.
+* Los puestos especializados tienden a ofrecer mayores niveles de remuneración.
+* Existe una fuerte presencia de modalidades de trabajo remoto dentro del sector.
+* La experiencia profesional tiene un impacto directo en el nivel salarial ofrecido.
+
+El uso de Power BI permitió transformar datos complejos en visualizaciones claras que facilitan la comprensión de las tendencias del mercado laboral en Inteligencia Artificial.
+
+![alt text](image-1.png)
+
+---
+
+## 6. Herramientas Utilizadas
+
+* Power BI Desktop
+
+* Power Query
+
+![alt text](image-8.png)
+
+* Dataset: AI Job Market Dataset
+
+
 
 ![alt text](image-6.png)
 
 ![alt text](image-7.png)
-
-![alt text](image-8.png)
-
-![alt text](image-9.png)
-
-![alt text](image-10.png)
