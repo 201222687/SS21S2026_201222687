@@ -1,0 +1,67 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\jcmal\\Desktop\\INGENIERIA\\INGE_2026\\1_SMSTRE_2026\\SMI_2\\LAB_SEMI_2\\SS21S2026_201222687\\PROYECTO1\\ssas\\pymuntidimensional\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{8D067F88-07EC-151F-2403-0BB62A6EE050}|pymuntidimensional\\pymuntidimensional.dwproj|C:\\Users\\jcmal\\Desktop\\INGENIERIA\\INGE_2026\\1_SMSTRE_2026\\SMI_2\\LAB_SEMI_2\\SS21S2026_201222687\\PROYECTO1\\ssas\\pymuntidimensional\\pymuntidimensional\\VISTASGFoodDWSSAS.cube||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design",
+      "RelativeMoniker": "D:0:0:{8D067F88-07EC-151F-2403-0BB62A6EE050}|pymuntidimensional\\pymuntidimensional.dwproj|solutionrelative:pymuntidimensional\\VISTASGFoodDWSSAS.cube||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D067F88-07EC-151F-2403-0BB62A6EE050}|pymuntidimensional\\pymuntidimensional.dwproj|C:\\Users\\jcmal\\Desktop\\INGENIERIA\\INGE_2026\\1_SMSTRE_2026\\SMI_2\\LAB_SEMI_2\\SS21S2026_201222687\\PROYECTO1\\ssas\\pymuntidimensional\\pymuntidimensional\\VISTASGFoodDWSSAS.dsv||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design",
+      "RelativeMoniker": "D:0:0:{8D067F88-07EC-151F-2403-0BB62A6EE050}|pymuntidimensional\\pymuntidimensional.dwproj|solutionrelative:pymuntidimensional\\VISTASGFoodDWSSAS.dsv||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "VISTASGFoodDWSSAS.cube [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\jcmal\\Desktop\\INGENIERIA\\INGE_2026\\1_SMSTRE_2026\\SMI_2\\LAB_SEMI_2\\SS21S2026_201222687\\PROYECTO1\\ssas\\pymuntidimensional\\pymuntidimensional\\VISTASGFoodDWSSAS.cube",
+              "RelativeDocumentMoniker": "pymuntidimensional\\VISTASGFoodDWSSAS.cube",
+              "ToolTip": "C:\\Users\\jcmal\\Desktop\\INGENIERIA\\INGE_2026\\1_SMSTRE_2026\\SMI_2\\LAB_SEMI_2\\SS21S2026_201222687\\PROYECTO1\\ssas\\pymuntidimensional\\pymuntidimensional\\VISTASGFoodDWSSAS.cube [Dise\u00F1o]",
+              "RelativeToolTip": "pymuntidimensional\\VISTASGFoodDWSSAS.cube [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2026-04-11T14:58:58.837Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "VISTASGFoodDWSSAS.dsv [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\jcmal\\Desktop\\INGENIERIA\\INGE_2026\\1_SMSTRE_2026\\SMI_2\\LAB_SEMI_2\\SS21S2026_201222687\\PROYECTO1\\ssas\\pymuntidimensional\\pymuntidimensional\\VISTASGFoodDWSSAS.dsv",
+              "RelativeDocumentMoniker": "pymuntidimensional\\VISTASGFoodDWSSAS.dsv",
+              "ToolTip": "C:\\Users\\jcmal\\Desktop\\INGENIERIA\\INGE_2026\\1_SMSTRE_2026\\SMI_2\\LAB_SEMI_2\\SS21S2026_201222687\\PROYECTO1\\ssas\\pymuntidimensional\\pymuntidimensional\\VISTASGFoodDWSSAS.dsv [Dise\u00F1o]",
+              "RelativeToolTip": "pymuntidimensional\\VISTASGFoodDWSSAS.dsv [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2026-04-11T14:58:50.079Z"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{a83394e3-39c2-4678-a3c8-364b69d78fd3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{2826931d-bb12-452c-b660-c21852fb5da2}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
