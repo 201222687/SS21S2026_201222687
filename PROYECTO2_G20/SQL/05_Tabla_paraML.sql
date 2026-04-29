@@ -43,7 +43,8 @@ WHERE
   AND tip_amount BETWEEN 0 AND 200
   AND passenger_count BETWEEN 1 AND 6;
 
--- 
+
+--  Cuenta cuántos datos hay en cada grupo (TRAIN, EVAL, PREDICT) para validar que el split del modelo está bien hecho.
 
 SELECT
   split_col,

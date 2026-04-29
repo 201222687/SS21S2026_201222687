@@ -227,3 +227,37 @@ FROM ML.PREDICT(
   )
 );
 
+
+
+-- ¿PARA QUÉ SIRVE ML.CONFUSION_MATRIX?
+
+-- La matriz de confusión sirve para ver qué tan bien está clasificando el modelo, no solo en general, sino exactamente en qué acierta y en qué se equivoca.
+
+-- Modelo de clasificación → is_high_tip (0 o 1)
+
+-- ¿QUÉ ANALIZA? 
+-- Compara:
+
+-- VALOR REAL  vs  VALOR PREDICHO
+
+SELECT *
+FROM ML.CONFUSION_MATRIX(
+  MODEL `Proyecto2_G20.modelo_clasificacion`,
+  (
+    SELECT
+      passenger_count,
+      trip_distance,
+      fare_amount,
+      trip_duration_minutes,
+      pickup_hour,
+      pickup_day_of_week,
+      pickup_month,
+      payment_type,
+      pickup_location_id,
+      dropoff_location_id,
+      is_high_tip
+    FROM `Proyecto2_G20.ml_features_taxi_2022`
+    WHERE split_col = 'EVAL'
+  )
+);
+

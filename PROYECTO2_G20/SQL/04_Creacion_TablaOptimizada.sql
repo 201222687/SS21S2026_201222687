@@ -1,8 +1,8 @@
 -- 1. Crear el dataset
-CREATE SCHEMA IF NOT EXISTS `taxi_dataset`;
+CREATE SCHEMA IF NOT EXISTS `Proyecto2_G20`;
 
 -- 2. Tabla optimizada con PARTITION BY y CLUSTER BY
-CREATE OR REPLACE TABLE `taxi_dataset.taxi_trips_2022_optimized`
+CREATE OR REPLACE TABLE `Proyecto2_G20.taxi_trips_2022_optimized`
 PARTITION BY pickup_date
 CLUSTER BY vendor_id, pickup_location_id, payment_type
 AS
