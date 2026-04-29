@@ -9,6 +9,18 @@
     {
       "AbsoluteMoniker": "D:0:0:{8D067F88-07EC-151F-2403-0BB62A6EE050}|pymuntidimensional\\pymuntidimensional.dwproj|C:\\Users\\jcmal\\Desktop\\INGENIERIA\\INGE_2026\\1_SMSTRE_2026\\SMI_2\\LAB_SEMI_2\\SS21S2026_201222687\\PROYECTO1\\ssas\\pymuntidimensional\\pymuntidimensional\\VISTASGFoodDWSSAS.dsv||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design",
       "RelativeMoniker": "D:0:0:{8D067F88-07EC-151F-2403-0BB62A6EE050}|pymuntidimensional\\pymuntidimensional.dwproj|solutionrelative:pymuntidimensional\\VISTASGFoodDWSSAS.dsv||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D067F88-07EC-151F-2403-0BB62A6EE050}|pymuntidimensional\\pymuntidimensional.dwproj|C:\\Users\\jcmal\\Desktop\\INGENIERIA\\INGE_2026\\1_SMSTRE_2026\\SMI_2\\LAB_SEMI_2\\SS21S2026_201222687\\PROYECTO1\\ssas\\pymuntidimensional\\pymuntidimensional\\Dim Cliente.dim||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design",
+      "RelativeMoniker": "D:0:0:{8D067F88-07EC-151F-2403-0BB62A6EE050}|pymuntidimensional\\pymuntidimensional.dwproj|solutionrelative:pymuntidimensional\\Dim Cliente.dim||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D067F88-07EC-151F-2403-0BB62A6EE050}|pymuntidimensional\\pymuntidimensional.dwproj|C:\\Users\\jcmal\\Desktop\\INGENIERIA\\INGE_2026\\1_SMSTRE_2026\\SMI_2\\LAB_SEMI_2\\SS21S2026_201222687\\PROYECTO1\\ssas\\pymuntidimensional\\pymuntidimensional\\Dim Producto.dim||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design",
+      "RelativeMoniker": "D:0:0:{8D067F88-07EC-151F-2403-0BB62A6EE050}|pymuntidimensional\\pymuntidimensional.dwproj|solutionrelative:pymuntidimensional\\Dim Producto.dim||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8D067F88-07EC-151F-2403-0BB62A6EE050}|pymuntidimensional\\pymuntidimensional.dwproj|C:\\Users\\jcmal\\Desktop\\INGENIERIA\\INGE_2026\\1_SMSTRE_2026\\SMI_2\\LAB_SEMI_2\\SS21S2026_201222687\\PROYECTO1\\ssas\\pymuntidimensional\\pymuntidimensional\\Dim Fecha.dim||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design",
+      "RelativeMoniker": "D:0:0:{8D067F88-07EC-151F-2403-0BB62A6EE050}|pymuntidimensional\\pymuntidimensional.dwproj|solutionrelative:pymuntidimensional\\Dim Fecha.dim||{B4191D15-2D32-45F2-906F-E91BBAAA6059}|Design"
     }
   ],
   "DocumentGroupContainers": [
@@ -41,6 +53,21 @@
               "EditorCaption": " [Dise\u00F1o]"
             },
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{7cc9e714-2774-4fc6-8631-a07eee703286}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Dim Producto.dim [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\jcmal\\Desktop\\INGENIERIA\\INGE_2026\\1_SMSTRE_2026\\SMI_2\\LAB_SEMI_2\\SS21S2026_201222687\\PROYECTO1\\ssas\\pymuntidimensional\\pymuntidimensional\\Dim Producto.dim",
+              "RelativeDocumentMoniker": "pymuntidimensional\\Dim Producto.dim",
+              "ToolTip": "C:\\Users\\jcmal\\Desktop\\INGENIERIA\\INGE_2026\\1_SMSTRE_2026\\SMI_2\\LAB_SEMI_2\\SS21S2026_201222687\\PROYECTO1\\ssas\\pymuntidimensional\\pymuntidimensional\\Dim Producto.dim [Dise\u00F1o]",
+              "RelativeToolTip": "pymuntidimensional\\Dim Producto.dim [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2026-04-11T20:22:50.326Z"
+            },
+            {
               "$type": "Document",
               "DocumentIndex": 1,
               "Title": "VISTASGFoodDWSSAS.dsv [Dise\u00F1o]",
@@ -49,7 +76,30 @@
               "ToolTip": "C:\\Users\\jcmal\\Desktop\\INGENIERIA\\INGE_2026\\1_SMSTRE_2026\\SMI_2\\LAB_SEMI_2\\SS21S2026_201222687\\PROYECTO1\\ssas\\pymuntidimensional\\pymuntidimensional\\VISTASGFoodDWSSAS.dsv [Dise\u00F1o]",
               "RelativeToolTip": "pymuntidimensional\\VISTASGFoodDWSSAS.dsv [Dise\u00F1o]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2026-04-11T14:58:50.079Z"
+              "WhenOpened": "2026-04-11T14:58:50.079Z",
+              "EditorCaption": " [Dise\u00F1o]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Dim Cliente.dim [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\jcmal\\Desktop\\INGENIERIA\\INGE_2026\\1_SMSTRE_2026\\SMI_2\\LAB_SEMI_2\\SS21S2026_201222687\\PROYECTO1\\ssas\\pymuntidimensional\\pymuntidimensional\\Dim Cliente.dim",
+              "RelativeDocumentMoniker": "pymuntidimensional\\Dim Cliente.dim",
+              "ToolTip": "C:\\Users\\jcmal\\Desktop\\INGENIERIA\\INGE_2026\\1_SMSTRE_2026\\SMI_2\\LAB_SEMI_2\\SS21S2026_201222687\\PROYECTO1\\ssas\\pymuntidimensional\\pymuntidimensional\\Dim Cliente.dim [Dise\u00F1o]",
+              "RelativeToolTip": "pymuntidimensional\\Dim Cliente.dim [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2026-04-11T20:22:51.861Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Dim Fecha.dim [Dise\u00F1o]",
+              "DocumentMoniker": "C:\\Users\\jcmal\\Desktop\\INGENIERIA\\INGE_2026\\1_SMSTRE_2026\\SMI_2\\LAB_SEMI_2\\SS21S2026_201222687\\PROYECTO1\\ssas\\pymuntidimensional\\pymuntidimensional\\Dim Fecha.dim",
+              "RelativeDocumentMoniker": "pymuntidimensional\\Dim Fecha.dim",
+              "ToolTip": "C:\\Users\\jcmal\\Desktop\\INGENIERIA\\INGE_2026\\1_SMSTRE_2026\\SMI_2\\LAB_SEMI_2\\SS21S2026_201222687\\PROYECTO1\\ssas\\pymuntidimensional\\pymuntidimensional\\Dim Fecha.dim [Dise\u00F1o]",
+              "RelativeToolTip": "pymuntidimensional\\Dim Fecha.dim [Dise\u00F1o]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2026-04-11T20:21:08.623Z"
             },
             {
               "$type": "Bookmark",
