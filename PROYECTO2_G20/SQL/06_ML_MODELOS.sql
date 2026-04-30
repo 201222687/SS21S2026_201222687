@@ -1,8 +1,3 @@
-
-
--- BLOQUE DE MACHINE LEARNING COMPLETO.
-
-
 -- MODELO 1: CLASIFICACIÓN (PROPINA ALTA)
 
 -- Objetivo: predecir si un viaje tendrá propina alta (is_high_tip)
@@ -64,7 +59,6 @@ FROM ML.EVALUATE(
 
 -- la predicción (0 o 1)
 -- la probabilidad asociada
-
 SELECT
   *,
   predicted_is_high_tip,
@@ -92,8 +86,6 @@ FROM ML.PREDICT(
 
 -- Esta consulta guarda los resultados de las predicciones en una nueva tabla (predicciones_clasificacion).
 -- Esto permite usar los resultados posteriormente en visualizaciones o análisis.
-
-
 CREATE OR REPLACE TABLE `Proyecto2_G20.predicciones_clasificacion` AS
 SELECT
   *
@@ -123,8 +115,6 @@ FROM ML.PREDICT(
 
 -- Esta consulta crea un modelo de regresión lineal que predice el monto exacto de la propina (tip_amount).
 -- Se entrena con datos del conjunto TRAIN, utilizando variables del viaje como distancia, tarifa, tiempo y ubicación.
-
-
 CREATE OR REPLACE MODEL `Proyecto2_G20.modelo_regresion`
 OPTIONS(
   model_type = 'linear_reg',
@@ -201,8 +191,6 @@ FROM ML.PREDICT(
 );
 
 -- GUARDA PREDICCIONES.
-
--- Esta consulta guarda las predicciones del modelo de regresión en una tabla (predicciones_regresion).
 -- Esto facilita su uso en dashboards o comparaciones posteriores.
 
 CREATE OR REPLACE TABLE `Proyecto2_G20.predicciones_regresion` AS
@@ -227,9 +215,6 @@ FROM ML.PREDICT(
   )
 );
 
-
-
--- ¿PARA QUÉ SIRVE ML.CONFUSION_MATRIX?
 
 -- La matriz de confusión sirve para ver qué tan bien está clasificando el modelo, no solo en general, sino exactamente en qué acierta y en qué se equivoca.
 
